@@ -1,0 +1,86 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #272a34;
+    color: white;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-items li {
+    display: inline;
+  }
+  
+  .menu-items a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #whatsapp-button {
+    margin-left: auto;
+  }
+  
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .parallax {
+    background-image: url('https://yata.s3-object.locaweb.com.br/532b68c6628da326ed4951a3eecd46276c922883d73a4f813725357a271b76f2');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  .highlight {
+    background-color: #6e5858;
+    padding: 10px;
+  }
+  
+  .center-image {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .area {
+    margin: 20px 0;
+  }
+  
+  .area img {
+    width: 100px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block;
+    }
+  
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    #menu-control:checked + .menu-button + .menu-items {
+      display: flex;
+    }
+  }
+  
